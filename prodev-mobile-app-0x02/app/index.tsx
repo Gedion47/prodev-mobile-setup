@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
+import { background-image } from "@/assets/images/background-image.png";
 
 export default function Index() {
   return (
@@ -53,6 +54,9 @@ export default function Index() {
     </SafeAreaProvider>
   );
 }
+/* 
+app/index.tsx doesn't contain: ["@/assets/images/background-image.png"]
+<Text style={styles.textLarge}>Find your favorite place here</Text> */
 
 const styles = StyleSheet.create({
   container: {
